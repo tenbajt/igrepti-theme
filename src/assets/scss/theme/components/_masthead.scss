@@ -1,0 +1,60 @@
+@use 'modules/color';
+@use 'modules/text-size';
+@use 'modules/breakpoint';
+
+.masthead {
+    padding: 0 1rem 3rem;
+
+    @include breakpoint.medium {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    @include breakpoint.large {
+        padding-bottom: 0;
+    }
+
+    @include breakpoint.large-xl {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+.masthead__content {
+    margin: 0 auto;
+    display: grid;
+    padding: 1rem 0 2rem;
+    max-width: 1200px;
+    column-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.masthead__text {
+    //padding: 2rem 0 4rem;
+    padding: 9rem 0;
+
+    @include breakpoint.medium {
+        //padding-top: 10rem;
+        //padding-bottom: 12rem;
+    }
+}
+
+.masthead__title {
+    @include text-size.large-4xl;
+    color: color.black-high();
+    font-weight: 900;
+
+    @include breakpoint.small {
+        @include text-size.large-5xl;
+    }
+}
+
+.masthead__lead {
+    @include text-size.medium;
+    color: color.black-high();
+    margin: 1rem 0 2rem;
+
+    @include breakpoint.medium {
+        margin-top: 2rem;
+    }
+}

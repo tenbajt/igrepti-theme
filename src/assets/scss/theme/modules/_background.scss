@@ -1,0 +1,13 @@
+@mixin content {
+    position: relative;
+    &::before {
+        width: 100vw;
+        inset: 0 auto 0 50%;
+        content: "";
+        z-index: -1;
+        position: absolute;
+        transform: translateX(-50%);
+        pointer-events: none;
+        @content;
+    }
+}

@@ -1,0 +1,14 @@
+@use 'modules/breakpoint';
+
+.site {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @include breakpoint.medium {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+.site__wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+}

@@ -1,0 +1,18 @@
+@use 'modules/color';
+@use 'modules/text-size';
+
+.consent {
+    position: relative;
+    padding-left: 2.25rem;
+}
+
+.consent__checkbox {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.consent__description {
+    @include text-size.small-xs;
+    color: color.black-medium();
+}

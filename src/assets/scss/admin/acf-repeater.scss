@@ -1,0 +1,37 @@
+/**
+ * Remove the top spacing between metabox's header and repeater.
+ */
+.acf-postbox > .acf-fields.-left > .acf-field-repeater {
+    padding: 0 0 12px 0;
+}
+
+/**
+ * Remove left-side label container.
+ */
+.acf-postbox > .acf-fields.-left > .acf-field-repeater::before {
+    display: none;
+}
+
+/**
+ * Make it fill whole metabox's width.
+ */
+.acf-postbox > .acf-fields.-left > .acf-field-repeater > .acf-input {
+    width: 100%;
+    padding: 0;
+}
+
+/**
+ * Remove double borders on top and sides. Make spacing between repeater and button match the metabox's bottom spacing.
+ */
+.acf-postbox > .acf-fields.-left > .acf-field-repeater > .acf-input > .acf-repeater.-row > .acf-table {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+/**
+ * Make button right spacing and match it to the metabox's bottom spacing.
+ */
+.acf-postbox > .acf-fields.-left > .acf-field-repeater > .acf-input > .acf-repeater.-row > .acf-actions {
+    margin: 12px 12px 0 0;
+}

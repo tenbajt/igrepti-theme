@@ -1,0 +1,68 @@
+@use 'modules/color';
+@use 'modules/shadow';
+@use 'modules/text-size';
+@use 'modules/breakpoint';
+
+.contact {
+    padding: 5rem 1rem;
+    background-color: color.gray-50();
+
+    @include breakpoint.medium {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    @include breakpoint.large-xl {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+.contact__content {
+    margin: 0 auto;
+    display: grid;
+    max-width: 1200px;
+    column-gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, auto);
+}
+
+.contact__form {
+    @include shadow.normal;
+    display: grid;
+    row-gap: 1rem;
+    padding: 1.5rem 1.5rem 2rem;
+    max-width: 25rem;
+    border-radius: 0.25rem;
+    background-color: color.white();
+}
+
+.contact__heading {
+    @include text-size.large-xl;
+    margin: 0 0 0.5rem;
+    font-weight: 700;
+
+    &::first-line {
+        color: color.black-high();
+    }
+}
+
+.contact__sent {
+    @include text-size.small;
+    color: color.green-600();
+    margin: -1.5rem 0 0.75rem;
+}
+
+.contact__sent--error {
+    color: color.error();
+}
+
+.contact__input {
+    width: 100%;
+    display: block;
+}
+
+.contact__submit {
+    margin: 1.25rem 0 0;
+}

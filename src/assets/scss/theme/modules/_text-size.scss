@@ -1,0 +1,79 @@
+@mixin small-3xs {
+    font-size: 0.5rem;
+    line-height: 0.625rem;
+}
+
+@mixin small-2xs {
+    font-size: 0.625rem;
+    line-height: 0.75rem;
+}
+
+@mixin small-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+@mixin small {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+@mixin smaller {
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+}
+
+@mixin base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+@mixin medium {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+@mixin large {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+@mixin large-xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+@mixin large-2xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+@mixin large-3xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+@mixin large-4xl {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+@mixin large-5xl {
+    font-size: 3.75rem;
+    line-height: 1;
+}
+
+@mixin large-6xl {
+    font-size: 4.5rem;
+    line-height: 1;
+}
+
+@mixin large-7xl {
+    font-size: 6rem;
+    line-height: 1;
+}
+
+@mixin large-8xl {
+    font-size: 8rem;
+    line-height: 1;
+}

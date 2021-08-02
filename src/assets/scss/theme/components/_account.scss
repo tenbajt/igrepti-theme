@@ -1,0 +1,80 @@
+@use 'modules/color';
+@use 'modules/text-size';
+@use 'modules/breakpoint';
+
+.account {
+    padding: 0 1rem;
+
+    @include breakpoint.medium {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    @include breakpoint.large-xl {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+.account--navbar {
+    color: color.white-high();
+    background-color: color.green-600();
+}
+
+.account__content {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.account__content--navbar {
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    grid-template-columns: auto 1fr auto;
+}
+
+.account__company {
+    margin: 0.5rem 1rem 0.5rem 0;
+    padding: 0 2rem 0 0;
+    border-right: 1px solid color.white-high();
+}
+
+.account__name {
+    @include text-size.large;
+    font-weight: 500;
+}
+
+.account__email {
+    @include text-size.small;
+    color: color.white-high();
+    margin: -1px 0 2px;
+    font-weight: 300;
+}
+
+.account__items {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    list-style: none;
+    align-self: stretch;
+    grid-auto-flow: column;
+}
+
+.account__link {
+    @include text-size.smaller;
+    height: 100%;
+    margin: 0 0.5rem;
+    padding: 0 0.5rem;
+    display: grid;
+    border-top: 3px solid transparent;
+    align-items: center;
+    border-bottom: 3px solid transparent;
+}
+
+.account__link:hover {
+    border-bottom-color: white;
+}
+
+.account__link[data-selected='1'] {
+    border-bottom-color: white;
+}

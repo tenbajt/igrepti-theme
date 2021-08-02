@@ -1,0 +1,61 @@
+@use 'modules/color';
+@use 'modules/text-size';
+
+.button {
+    color: color.white();
+    border: none;
+    display: inline-block;
+    padding: 0.75em 1em;
+    min-width: 8rem;
+    text-align: center;
+    transition: background-color 150ms, color 150ms, border-color 150ms;
+    white-space: nowrap;
+    border-radius: 0.125rem;
+    vertical-align: middle;
+    background-color: color.green-600();
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    @include text-size.smaller;
+}
+.button:hover {
+    background-color: color.green-500();
+}
+.button:disabled {
+    color: color.white-disabled();
+    border: color.black-disabled();
+    background-color: color.black-disabled();
+}
+.button--wide {
+    width: 100%;
+}
+.button--stretched {
+    width: 100%;
+}
+.button--light {
+    color: color.white-high();
+    border-color: color.white();
+}
+.button--light:hover {
+    color: color.black-high();
+    background-color: color.white();
+}
+.button--info {
+    color: color.blue-600();
+    border-color: color.blue-600();
+}
+.button--info:hover {
+    background-color: color.blue-600();
+}
+.button--cancel {
+    color: color.red-600();
+    border-color: color.red-600();
+}
+.button--cancel:hover {
+    background-color: color.red-600();
+}
+.button__icon {
+    margin: -.125rem .125rem 0 0;
+    vertical-align: middle;
+}

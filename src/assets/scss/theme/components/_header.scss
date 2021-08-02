@@ -1,0 +1,27 @@
+@use 'modules/shadow';
+@use 'modules/breakpoint';
+@use 'modules/background';
+
+.header {
+    gap: 0 1rem;
+    z-index: 10;
+    display: grid;
+    padding: 1rem 0;
+    position: relative;
+    grid-template-areas: "branding nav user search";
+    grid-template-columns: 1fr auto auto;
+    @include background.content {
+        @include shadow.normal;
+    }
+    @include breakpoint.medium {
+        padding: .625rem 0;
+    }
+    @include breakpoint.large {
+        grid-template-areas: "branding nav user search";
+        grid-template-columns: auto 1fr auto auto;
+    }
+}
+.header__toggler {
+    display: none;
+    grid-area: toggler;
+}

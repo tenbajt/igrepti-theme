@@ -1,0 +1,18 @@
+@use 'modules/color';
+
+.search {
+    position: relative;
+    grid-area: search;
+}
+.search__input {
+    padding-left: 3rem;
+}
+.search__submit {
+    width: 3rem;
+    inset: 0 auto 0 0;
+    color: color.black-high();
+    position: absolute;
+}
+.search__submit:hover {
+    color: color.green-600();
+}

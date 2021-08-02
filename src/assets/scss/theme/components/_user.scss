@@ -1,0 +1,42 @@
+@use 'modules/color';
+@use 'modules/text-size';
+@use 'modules/breakpoint';
+
+.user {
+    gap: 0.5rem;
+    margin: 0;
+    display: grid;
+    padding: 0 0.25rem;
+    grid-area: user;
+    list-style: none;
+    grid-auto-flow: column;
+}
+.user__item {
+    display: grid;
+}
+.user__link {
+    color: color.black-high();
+    display: grid;
+    padding: 0 0.5rem;
+    text-align: center;
+    align-content: center;
+}
+.user__link:hover {
+    color: color.green-600();
+}
+.user__link--guest {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.user__icon {
+    font-size: 1.875rem;
+    line-height: 1;
+}
+.user__label {
+    color: color.black-medium();
+    display: none;
+    @include text-size.small-xs;
+    @include breakpoint.large {
+        display: block;
+    }
+}

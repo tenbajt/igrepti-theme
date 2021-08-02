@@ -1,0 +1,38 @@
+@use 'modules/color';
+@use 'modules/ratio';
+@use 'modules/text-size';
+
+.miniature {
+    text-align: center;
+    //text-gray-800 text-center
+}
+
+.miniature__thumbnail {
+    @include ratio.square;
+    display: block;
+}
+
+.miniature__manufacturer {
+    width: auto;
+    right: auto;
+    bottom: auto;
+    height: auto;
+    padding: 0.75rem;
+    max-width: 30%;
+    max-height: 30%;
+}
+
+.miniature__image {
+    object-fit: contain;
+}
+
+.miniature__name {
+    @include text-size.smaller;
+    color: color.black-high();
+    margin: 0.375rem 1rem 0;
+    display: inline-block;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

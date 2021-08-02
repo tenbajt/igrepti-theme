@@ -1,0 +1,96 @@
+/**
+ * Modifies all ACF input fields appearance.
+ */
+.acf-postbox input, .acf-postbox textarea {
+  border: #ccd0d4 solid 1px;
+  border-radius: 0;
+  resize: none !important;
+}
+
+/**
+ * Removes ACF group fields padding and hides label within fields group.
+ */
+.acf-postbox > .acf-fields > .acf-field-group {
+  padding: 0 !important;
+}
+.acf-postbox > .acf-fields > .acf-field-group > .acf-label,
+.acf-postbox > .acf-fields > .acf-field-repeater > .acf-label {
+  display: none;
+}
+.acf-postbox > .acf-fields > .acf-field-group > .acf-input > .acf-fields.-left.-border {
+  border: none;
+}
+
+/**
+ * Hides ACF fields label within menu item.
+ */
+.acf-menu-item-fields > .acf-field > .acf-label > label {
+  display: none;
+}
+
+/**
+ * Modifies ACF nested groups appearance.
+ */
+.acf-postbox > .acf-fields > .acf-field-group > .acf-input > .acf-fields.-left.-border > .acf-field-group {
+  padding: 0;
+}
+.acf-postbox > .acf-fields > .acf-field-group > .acf-input > .acf-fields.-left.-border > .acf-field-group > .acf-label {
+  padding: 15px 12px;
+}
+.acf-postbox > .acf-fields > .acf-field-group > .acf-input > .acf-fields.-left.-border > .acf-field-group > .acf-input {
+  padding: 0;
+}
+.acf-postbox > .acf-fields > .acf-field-group > .acf-input > .acf-fields.-left.-border > .acf-field-group > .acf-input > .acf-fields.-top.-border {
+  border: none;
+  background: none;
+}
+
+/**
+ * Modifies ACF group nested inside repeater.
+ */
+.acf-postbox > .acf-fields > .acf-field-repeater > .acf-label {
+  display: none;
+}
+.acf-postbox > .acf-fields > .acf-field-repeater {
+  padding: 0;
+}
+.acf-postbox > .acf-fields > .acf-field-repeater > .acf-input > .acf-repeater.-row > .acf-table {
+  margin: 0;
+  border: none;
+  border-bottom: #ccd0d4 solid 1px;
+}
+.acf-postbox > .acf-fields > .acf-field-repeater > .acf-input > .acf-repeater.-row > .acf-table > .ui-sortable > .acf-row > .acf-fields.-left > .acf-field-group {
+  padding: 0;
+}
+.acf-postbox > .acf-fields > .acf-field-repeater > .acf-input > .acf-repeater.-row > .acf-table > .ui-sortable > .acf-row > .acf-fields.-left > .acf-field-group > .acf-label {
+  padding: 15px 12px;
+}
+.acf-postbox > .acf-fields > .acf-field-repeater > .acf-input > .acf-repeater.-row > .acf-table > .ui-sortable > .acf-row > .acf-fields.-left > .acf-field-group > .acf-input {
+  padding: 0;
+}
+.acf-postbox > .acf-fields > .acf-field-repeater > .acf-input > .acf-repeater.-row > .acf-table > .ui-sortable > .acf-row > .acf-fields.-left > .acf-field-group > .acf-input > .acf-fields.-top.-border {
+  border: none;
+  background: none;
+}
+.acf-postbox > .acf-fields > .acf-field-repeater > .acf-input > .acf-repeater.-row > .acf-actions {
+  padding: 15px 12px;
+}
+
+/**
+ * Hides unwanted fields in WordPress profile edit page.
+ */
+#your-profile > .form-table > tbody > .user-rich-editing-wrap,
+#your-profile > .form-table > tbody > .user-syntax-highlighting-wrap,
+#your-profile > .form-table > tbody > .user-admin-color-wrap,
+#your-profile > .form-table > tbody > .user-comment-shortcuts-wrap,
+#your-profile > .form-table > tbody > .user-language-wrap,
+#your-profile > .form-table > tbody > .user-user-login-wrap,
+#your-profile > h2:nth-of-type(3),
+#your-profile > .form-table > tbody > .user-url-wrap,
+#your-profile > h2:nth-of-type(4),
+#your-profile > .form-table > tbody > .user-description-wrap,
+#your-profile > .form-table > tbody > .user-profile-picture {
+    display: none;
+}
+
+

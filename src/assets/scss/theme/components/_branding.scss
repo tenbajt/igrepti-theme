@@ -1,0 +1,11 @@
+@use 'modules/breakpoint';
+
+.branding {
+    grid-area: branding;
+}
+.branding__logo {
+    height: 2rem;
+    @include breakpoint.large {
+        height: 3rem;
+    }
+}

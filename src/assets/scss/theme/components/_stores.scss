@@ -1,0 +1,48 @@
+@use 'modules/color';
+@use 'modules/text-size';
+@use 'modules/breakpoint';
+
+.stores {
+    padding: 2rem 1rem 5rem;
+    background-color: color.gray-100();
+
+    @include breakpoint.medium {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 5rem;
+    }
+
+    @include breakpoint.large-xl {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+.stores__content {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.stores__filter {
+    display: grid;
+    justify-items: end;
+}
+
+.stores__items {
+    gap: 1rem;
+    margin: 1rem 0 0;
+    padding: 0;
+    display: grid;
+    list-style: none;
+
+    @include breakpoint.large {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.stores__not-found {
+    @include text-size.large;
+    color: color.black-high();
+    margin: 5rem 0 ;
+    text-align: center;
+}

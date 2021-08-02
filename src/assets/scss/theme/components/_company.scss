@@ -1,0 +1,48 @@
+@use 'modules/color';
+@use 'modules/text-size';
+@use 'modules/breakpoint';
+
+.company__name {
+    @include text-size.large-3xl;
+    color: color.green-600();
+    font-weight: 900;
+}
+
+.company__description {
+    @include text-size.large-3xl;
+    color: color.black-high();
+    font-weight: 900;
+}
+
+.company__address {
+    @include text-size.smaller;
+    color: color.black-high();
+    margin: 0.25rem 0 0;
+}
+
+.company__open {
+    @include text-size.smaller;
+    color: color.black-high();
+    margin: 1.5rem 0 0;
+    display: grid;
+    column-gap: 0.75rem;
+    grid-template-columns: auto 1fr;
+}
+
+.company__closed {
+    color: color.red-600();
+}
+
+.company__contact {
+    @include text-size.smaller;
+    color: color.black-high();
+    margin: 1.5rem 0 0;
+    display: grid;
+    column-gap: 0.75rem;
+    justify-content: start;
+    grid-template-columns: auto auto;
+}
+
+.company__link:hover {
+    text-decoration: underline;
+}

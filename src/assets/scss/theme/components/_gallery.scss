@@ -1,0 +1,63 @@
+@use 'modules/color';
+@use 'modules/ratio';
+@use 'modules/scrollbar';
+
+.gallery {
+    gap: 0.25rem;
+    display: grid;
+    grid-template-columns: 7fr 1fr
+}
+
+.gallery__preview {
+    @include ratio.square;
+    background-color: color.white();
+}
+
+.gallery__manufacturer {
+    width: auto;
+    right: auto;
+    bottom: auto;
+    height: auto;
+    padding: 1rem;
+    max-width: 25%;
+    max-height: 25%;
+}
+
+.gallery__thumbnails {
+    position: relative;
+}
+
+.gallery__items {
+    @include scrollbar.hide;
+    top: 0;
+    gap: 0.25rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    position: absolute;
+    list-style: none;
+    overflow-y: scroll;
+    grid-auto-flow: row;
+}
+
+.gallery__item {
+    @include ratio.square;
+    cursor: pointer;
+    background-color: color.white();
+
+    &[data-selected="true"]::after {
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        bottom: 0;
+        height: 100%;
+        border: 1px solid color.green-600();
+        position: absolute;
+        border-radius: 0.125rem;
+    }
+}

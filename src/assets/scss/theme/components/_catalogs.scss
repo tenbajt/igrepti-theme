@@ -1,0 +1,38 @@
+@use 'modules/color';
+@use 'modules/ratio';
+@use 'modules/text-size';
+@use 'modules/breakpoint';
+
+.catalogs {
+    padding: 1.25rem 0;
+    @include breakpoint.medium {
+        padding: 5rem 0;
+    }
+}
+.catalogs__items {
+    gap: .25rem;
+    margin: 0;
+    display: grid;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(288px, calc((100% - (2 * .25rem)) / 3)));
+}
+.catalogs__item {
+    @include ratio.a4;
+}
+.catalogs__content {
+    gap: 1rem;
+    inset: auto 0 0;
+    display: grid;
+    padding: 1rem;
+    position: absolute;
+    min-height: 18rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, transparent 100%);
+    align-content: end;
+    justify-items: start;
+}
+.catalogs__lead {
+    color: color.white(0.93);
+    @include text-size.smaller;
+}

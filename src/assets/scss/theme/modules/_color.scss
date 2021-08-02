@@ -1,0 +1,355 @@
+@function black($opacity: 1) {
+    @return rgba(0, 0, 0, $opacity);
+}
+
+@function black-high() {
+    @return black(0.87);
+}
+
+@function black-medium() {
+    @return black(0.60);
+}
+
+@function black-disabled() {
+    @return black(0.38);
+}
+
+@function error() {
+    @return #B00020;
+}
+
+@function white($opacity: 1) {
+    @return rgba(255, 255, 255, $opacity);
+}
+
+@function white-high() {
+    @return white(0.87);
+}
+
+@function white-medium() {
+    @return white(0.60);
+}
+
+@function white-disabled() {
+    @return white(0.30);
+}
+
+@function gray-50($opacity: 1) {
+    @return rgba(249, 250, 251, $opacity);
+}
+
+@function gray-100($opacity: 1) {
+    @return rgba(243, 244, 246, $opacity);
+}
+
+@function gray-200($opacity: 1) {
+    @return rgba(229, 231, 235, $opacity);
+}
+
+@function gray-300($opacity: 1) {
+    @return rgba(209, 213, 219, $opacity);
+}
+
+@function gray-400($opacity: 1) {
+    @return rgba(156, 163, 175, $opacity);
+}
+
+@function gray-500($opacity: 1) {
+    @return rgba(107, 114, 128, $opacity);
+}
+
+@function gray-600($opacity: 1) {
+    @return rgba(75, 85, 99, $opacity);
+}
+
+@function gray-700($opacity: 1) {
+    @return rgba(55, 65, 81, $opacity);
+}
+
+@function gray-800($opacity: 1) {
+    @return rgba(31, 41, 55, $opacity);
+}
+
+@function gray-900($opacity: 1) {
+    @return rgba(17, 24, 39, $opacity);
+}
+
+@function red-50($opacity: 1) {
+    @return rgba(254, 242, 242, $opacity);
+}
+
+@function red-100($opacity: 1) {
+    @return rgba(254, 226, 226, $opacity);
+}
+
+@function red-200($opacity: 1) {
+    @return rgba(254, 202, 202, $opacity);
+}
+
+@function red-300($opacity: 1) {
+    @return rgba(252, 165, 165, $opacity);
+}
+
+@function red-400($opacity: 1) {
+    @return rgba(248, 113, 113, $opacity);
+}
+
+@function red-500($opacity: 1) {
+    @return rgba(239, 68, 68, $opacity);
+}
+
+@function red-600($opacity: 1) {
+    @return rgba(220, 38, 38, $opacity);
+}
+
+@function red-700($opacity: 1) {
+    @return rgba(185, 28, 28, $opacity);
+}
+
+@function red-800($opacity: 1) {
+    @return rgba(153, 27, 27, $opacity);
+}
+
+@function red-900($opacity: 1) {
+    @return rgba(127, 29, 29, $opacity);
+}
+
+@function yellow-50($opacity: 1) {
+    @return rgba(255, 251, 235, $opacity);
+}
+
+@function yellow-100($opacity: 1) {
+    @return rgba(254, 243, 199, $opacity);
+}
+
+@function yellow-200($opacity: 1) {
+    @return rgba(253, 230, 138, $opacity);
+}
+
+@function yellow-300($opacity: 1) {
+    @return rgba(252, 211, 77, $opacity);
+}
+
+@function yellow-400($opacity: 1) {
+    @return rgba(251, 191, 36, $opacity);
+}
+
+@function yellow-500($opacity: 1) {
+    @return rgba(245, 158, 11, $opacity);
+}
+
+@function yellow-600($opacity: 1) {
+    @return rgba(217, 119, 6, $opacity);
+}
+
+@function yellow-700($opacity: 1) {
+    @return rgba(180, 83, 9, $opacity);
+}
+
+@function yellow-800($opacity: 1) {
+    @return rgba(146, 64, 14, $opacity);
+}
+
+@function yellow-900($opacity: 1) {
+    @return rgba(120, 53, 15, $opacity);
+}
+
+@function green-50($opacity: 1) {
+    @return rgba(240, 253, 244, $opacity);
+}
+
+@function green-100($opacity: 1) {
+    @return rgba(220, 252, 231, $opacity);
+}
+
+@function green-200($opacity: 1) {
+    @return rgba(187, 247, 208, $opacity);
+}
+
+@function green-300($opacity: 1) {
+    @return rgba(134, 239, 172, $opacity);
+}
+
+@function green-400($opacity: 1) {
+    @return rgba(74, 222, 128, $opacity);
+}
+
+@function green-500($opacity: 1) {
+    @return rgba(34, 197, 94, $opacity);
+}
+
+@function green-600($opacity: 1) {
+    @return rgba(22, 163, 74, $opacity);
+}
+
+@function green-700($opacity: 1) {
+    @return rgba(21, 128, 61, $opacity);
+}
+
+@function green-800($opacity: 1) {
+    @return rgba(22, 101, 52, $opacity);
+}
+
+@function green-900($opacity: 1) {
+    @return rgba(20, 83, 45, $opacity);
+}
+
+@function blue-50($opacity: 1) {
+    @return rgba(239, 246, 255, $opacity);
+}
+
+@function blue-100($opacity: 1) {
+    @return rgba(219, 234, 254, $opacity);
+}
+
+@function blue-200($opacity: 1) {
+    @return rgba(191, 219, 254, $opacity);
+}
+
+@function blue-300($opacity: 1) {
+    @return rgba(147, 197, 253, $opacity);
+}
+
+@function blue-400($opacity: 1) {
+    @return rgba(96, 165, 250, $opacity);
+}
+
+@function blue-500($opacity: 1) {
+    @return rgba(59, 130, 246, $opacity);
+}
+
+@function blue-600($opacity: 1) {
+    @return rgba(37, 99, 235, $opacity);
+}
+
+@function blue-700($opacity: 1) {
+    @return rgba(29, 78, 216, $opacity);
+}
+
+@function blue-800($opacity: 1) {
+    @return rgba(30, 64, 175, $opacity);
+}
+
+@function blue-900($opacity: 1) {
+    @return rgba(30, 58, 138, $opacity);
+}
+
+@function indigo-50($opacity: 1) {
+    @return rgba(238, 242, 255, $opacity);
+}
+
+@function indigo-100($opacity: 1) {
+    @return rgba(224, 231, 255, $opacity);
+}
+
+@function indigo-200($opacity: 1) {
+    @return rgba(199, 210, 254, $opacity);
+}
+
+@function indigo-300($opacity: 1) {
+    @return rgba(165, 180, 252, $opacity);
+}
+
+@function indigo-400($opacity: 1) {
+    @return rgba(129, 140, 248, $opacity);
+}
+
+@function indigo-500($opacity: 1) {
+    @return rgba(99, 102, 241, $opacity);
+}
+
+@function indigo-600($opacity: 1) {
+    @return rgba(79, 70, 229, $opacity);
+}
+
+@function indigo-700($opacity: 1) {
+    @return rgba(67, 56, 202, $opacity);
+}
+
+@function indigo-800($opacity: 1) {
+    @return rgba(55, 48, 163, $opacity);
+}
+
+@function indigo-900($opacity: 1) {
+    @return rgba(49, 46, 129, $opacity);
+}
+
+@function purple-50($opacity: 1) {
+    @return rgba(245, 243, 255, $opacity);
+}
+
+@function purple-100($opacity: 1) {
+    @return rgba(237, 233, 254, $opacity);
+}
+
+@function purple-200($opacity: 1) {
+    @return rgba(221, 214, 254, $opacity);
+}
+
+@function purple-300($opacity: 1) {
+    @return rgba(196, 181, 253, $opacity);
+}
+
+@function purple-400($opacity: 1) {
+    @return rgba(167, 139, 250, $opacity);
+}
+
+@function purple-500($opacity: 1) {
+    @return rgba(139, 92, 246, $opacity);
+}
+
+@function purple-600($opacity: 1) {
+    @return rgba(124, 58, 237, $opacity);
+}
+
+@function purple-700($opacity: 1) {
+    @return rgba(109, 40, 217, $opacity);
+}
+
+@function purple-800($opacity: 1) {
+    @return rgba(91, 33, 182, $opacity);
+}
+
+@function purple-900($opacity: 1) {
+    @return rgba(76, 29, 149, $opacity);
+}
+
+@function pink-50($opacity: 1) {
+    @return rgba(253, 242, 248, $opacity);
+}
+
+@function pink-100($opacity: 1) {
+    @return rgba(252, 231, 243, $opacity);
+}
+
+@function pink-200($opacity: 1) {
+    @return rgba(251, 207, 232, $opacity);
+}
+
+@function pink-300($opacity: 1) {
+    @return rgba(249, 168, 212, $opacity);
+}
+
+@function pink-400($opacity: 1) {
+    @return rgba(244, 114, 182, $opacity);
+}
+
+@function pink-500($opacity: 1) {
+    @return rgba(236, 72, 153, $opacity);
+}
+
+@function pink-600($opacity: 1) {
+    @return rgba(219, 39, 119, $opacity);
+}
+
+@function pink-700($opacity: 1) {
+    @return rgba(190, 24, 93, $opacity);
+}
+
+@function pink-800($opacity: 1) {
+    @return rgba(157, 23, 77, $opacity);
+}
+
+@function pink-900($opacity: 1) {
+    @return rgba(131, 24, 67, $opacity);
+}

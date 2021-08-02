@@ -1,0 +1,35 @@
+/**
+ * Remove the spacing between metabox's header and group field.
+ */
+.acf-postbox > .acf-fields.-left > .acf-field-group {
+    padding: 0;
+}
+
+/**
+ * Remove left-side label container.
+ */
+.acf-postbox > .acf-fields.-left > .acf-field-group::before {
+    display: none;
+}
+
+/**
+ * Make it fill whole metabox's width.
+ */
+.acf-postbox > .acf-fields.-left > .acf-field-group > .acf-input {
+    width: 100%;
+    padding: 0;
+}
+
+/**
+ * Remove double borders.
+ */
+.acf-postbox > .acf-fields.-left > .acf-field-group > .acf-input > .acf-fields.-left.-border {
+    border: none;
+}
+
+/**
+ * Make button right spacing and match it to the metabox's bottom spacing.
+ */
+.acf-postbox > .acf-fields.-left > .acf-field-repeater > .acf-input > .acf-repeater.-row > .acf-actions {
+    margin-right: 12px;
+}

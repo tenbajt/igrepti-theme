@@ -1,0 +1,23 @@
+@use 'modules/breakpoint';
+
+.forms {
+    padding-top: 6rem;
+    padding-bottom: 14rem;
+}
+
+.forms__items {
+    display: grid;
+    row-gap: 1.5rem;
+    column-gap: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form__items--single {
+    justify-items: center;
+    grid-template-columns: 1fr;
+}
+
+.forms__items--account-settings {
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+}

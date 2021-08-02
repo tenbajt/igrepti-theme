@@ -1,0 +1,73 @@
+@use 'modules/color';
+@use 'modules/text-size';
+
+.form {
+    width: 32rem;
+    max-width: 100%;
+}
+
+.form--company-data {
+    grid-row-end: 3;
+    grid-row-start: 1;
+}
+
+.form__heading {
+    @include text-size.large-xl;
+    color: color.black-high();
+    margin: 0 0 1.5rem;
+}
+
+.form__badge {
+    @include text-size.small-xs;
+    color: color.white-high();
+    margin: 0 0 0.25rem 0.25rem;
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.125rem;
+    vertical-align: middle;
+    background-color: color.blue-500();
+}
+
+.form__badge--error {
+    background-color: color.error();
+}
+
+.form__content {
+    border: 1px solid color.gray-100();
+    display: grid;
+    padding: 1.5rem;
+    border-radius: 0.125rem;
+}
+
+.form__inputs {
+    gap: 1rem;
+    margin: 0 0 1.5rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+}
+
+.form__inputs--login {
+    margin-bottom: 0.75rem;
+}
+
+.form__label {
+    @include text-size.smaller;
+    color: color.black-high();
+}
+
+.form__required {
+    color: color.error();
+}
+
+.form__link {
+    @include text-size.small;
+    color: color.green-700();
+    margin: 0 0 1.5rem;
+    display: inline-block;
+    justify-self: end;
+}
+
+.form__link:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,9 @@
+@use 'modules/color';
+@use 'modules/text-size';
+
+.orders__empty {
+    @include text-size.large;
+    color: color.black-high();
+    margin: 16rem 0;
+    text-align: center;
+}

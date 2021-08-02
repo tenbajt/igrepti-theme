@@ -1,0 +1,34 @@
+@use 'modules/color';
+
+select:focus,
+textarea:focus,
+[multiple]:focus,
+[type='url']:focus,
+[type='tel']:focus,
+[type='text']:focus,
+[type='date']:focus,
+[type='time']:focus,
+[type='week']:focus,
+[type='email']:focus,
+[type='month']:focus,
+[type='number']:focus,
+[type='search']:focus,
+[type='password']:focus,
+[type='datetime-local']:focus {
+    --tw-ring-color: #16A34A;
+    border-color: color.green-600();
+}
+
+[type='checkbox'], [type='radio'] {
+    color: color.green-600();
+    border-color: color.gray-200();
+    background-color: color.gray-50();
+}
+
+[type='checkbox'] {
+    border-radius: 0.125rem;
+}
+
+[type='checkbox']:focus, [type='radio']:focus {
+    --tw-ring-color: color.green-600();
+}
